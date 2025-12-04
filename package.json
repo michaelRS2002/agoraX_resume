@@ -1,0 +1,23 @@
+{
+  "name": "agorax_resume_backend",
+  "version": "1.0.0",
+  "description": "Backend service for meeting transcription & summaries (migrated)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "openai": "^6.9.1",
+    "resend": "^1.0.0",
+    "ffmpeg-static": "^5.3.0",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.2"
+  }
+}
